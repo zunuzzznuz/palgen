@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acara Seminar Komunitas</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Acara Seminar Komunitas</h1>
+      <p>Bergabunglah dengan kami untuk seminar yang menarik tentang pengembangan diri.</p>
+      <button onclick="document.getElementById('form').scrollIntoView({behavior: 'smooth'})">RSVP Sekarang</button>
+    </div>
+    <div class="hero-img">[Gambar Seminar]</div>
+  </header>
+
+  <section class="event-info">
+    <h2>Tanggal dan Waktu</h2>
+    <div class="info">
+      <div><strong>📅</strong><p>25 Desember 2023</p></div>
+      <div><strong>⏰</strong><p>10:00 - 12:00 WIB</p></div>
+    </div>
+  </section>
+
+  <section class="countdown-section">
+    <h2>Countdown sampai acara</h2>
+    <div id="countdown" class="countdown">
+      <div><span id="days">0</span><p>Hari</p></div>
+      <div><span id="hours">0</span><p>Jam</p></div>
+      <div><span id="minutes">0</span><p>Menit</p></div>
+    </div>
+  </section>
+
+  <section class="map">
+    <h2>Lokasi</h2>
+    <p>Lokasi Acara: Ciwalk, Bandung. Lihat peta di bawah.</p>
+    <div class="map-placeholder">[Peta Google Maps]</div>
+  </section>
+
+  <section id="form" class="confirmation">
+    <h2>Konfirmasi Kehadiran</h2>
+    <form>
+      <input type="text" placeholder="Nama" required/>
+      <input type="text" placeholder="Nomor WhatsApp" required/>
+      <label>Jumlah Penonton:</label>
+      <select>
+        <option>1</option><option>2</option><option>3</option><option>4</option>
+      </select>
+      <div class="btn-group">
+        <button type="reset">Batal</button>
+        <button type="submit">Kirim</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="news">
+    <h2>Berita Acara</h2>
+    <div class="cards">
+      <div class="card"><p>Persiapkan dirimu untuk seminar ini!</p><small>Admin</small></div>
+      <div class="card"><p>Saya tidak sabar untuk hadir!</p><small>Peserta</small></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Seminar Komunitas</p>
+    <nav>
+      <a href="#">Kebijakan Privasi</a>
+      <a href="#">Syarat dan Ketentuan</a>
+      <a href="#">Hubungi Kami</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
